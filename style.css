@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 230px 1fr;
+  row-gap: 15px;
+  place-items: center;
+}
+
+main .buttons {
+  width: 100%;
+  max-width: 800px;
+  padding: 0px 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  place-items: center;
+}
+
+main .buttons .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+main .buttons select {
+  flex-grow: 1;
+}
+
+main .buttons .top {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main .display {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 10px solid red;
+  cursor: pointer;
+}
+
+main .display .box {
+  width: 25px;
+  height: 25px;
+  background-color: #0d6efd;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+}
